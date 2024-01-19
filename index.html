@@ -1,31 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <title>Sobre</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <title>Sobre</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-        <!-- <link rel="icon" type="image/jpg" href="img/icon.png" width="100%" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <!-- <link rel="icon" type="image/jpg" href="img/icon.png" width="100%" /> -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/htmx.org@1.9.10"></script>
-        <script src="script.js"></script>
-    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="script.js"></script>
+</head>
 
-    <body>
+<body class="has-navbar-fixed-top">
 
-        <nav>
+    <nav id="navbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="title is-3 my-2 mx-5">Titulo</h1>
 
-            <ul class="navigation">
-                <li class="left"><a href="javascript:void(0)" onclick="" class="button is-danger is-normal mx-2 my-2">Sobre</a></li>
-                
-                <li class="left"><a href="login.html" class="button is-danger is-normal mx-2 my-2">Login</a></li>
-                
-                <li class="right"><a href="javascript:void(0)" onclick="" class="button is-success is-normal mx-2 my-2">Topo</a></li>
-            </ul>
-        </nav>
-    </body>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="button is-warning is-outlined is-normal mx-2 my-2 ">Home</a>
+                <a class="button is-warning is-outlined is-normal mx-2 my-2 ">Documentation</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="buttons">
+                    <a class="button is-warning is-outlined is-normal mx-2 my-2">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flexbox">
+        <a class="image">
+            <div class="img-frame my-5">
+                <img src="/img/background.jpg" />
+            </div>
+        </a>
+
+        <div class="img-frame my-5">
+            <img src="/img/img1.jpg" />
+        </div>
+
+        <div class="img-frame my-5">
+            <img src="/img/img2.jpg" />
+        </div>
+
+        <div class="img-frame my-5">
+            <img src="/img/img3.jpg" />
+        </div>
+
+        <div class="img-frame my-5">
+            <img src="/img/img4.jpg" />
+        </div>
+
+        <div class="img-frame my-5">
+            <img src="/img/img5.jpg" />
+        </div>
+
+        <div class="img-frame my-5">
+            <img src="/img/img6.jpg" />
+        </div>
+
+        <div class="img-frame my-5">
+            <img src="/img/img7.jpg" />
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <dialog>
+        
+    </dialog>
+</body>
+
 </html>

@@ -1,25 +1,47 @@
 $(document).ready(function () {
-    date();
+  const dialog = document.querySelector("dialog");
+
+  $(function () {
+    var lastScrollTop = 0, delta = 5;
+    $(window).scroll(function () {
+      var nowScrollTop = $(this).scrollTop();
+      if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
+        if (nowScrollTop > lastScrollTop) {
+          $("#navbar").removeClass("is-fixed-top");
+          $("body").removeClass("has-navbar-fixed-top");
+        } else {
+          $("#navbar").addClass("is-fixed-top");
+          $("body").addClass("has-navbar-fixed-top");
+        }
+        lastScrollTop = nowScrollTop;
+      }
+    });
+  });
+
+
+  $('a.image').click(function() {
+    dialog.showModal();
+});
 })
 
-function date() {
+document.addEventListener('DOMContentLoaded', () => {
 
-    var date = new Date();
-    var hour = date.toLocaleTimeString();
-    var month = date.getMonth();
-    var week = date.getDay();
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    const weekSimple = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+  // Add a click event on each of them
+  $navbarBurgers.forEach(el => {
+    el.addEventListener('click', () => {
 
-    var weekname = weekSimple[week];
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
 
-    const monthSimple = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto",
-        "Setembro", "Outubro", "Novembro", "Dezembro"];
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
 
-    var monthName = monthSimple[month - 1];
+    });
+  });
 
-    // document.getElementById("data").innerHTML = weekname + ", " + day + " de " + monthName + " de " + year;
-    // document.getElementById("DATE").innerHTML = hour;
-}
-
-    setInterval(date, 1);
+});
