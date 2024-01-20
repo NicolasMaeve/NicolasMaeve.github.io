@@ -8,15 +8,16 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="lightbox.min.css" />
     <!-- <link rel="icon" type="image/jpg" href="img/icon.png" width="100%" /> -->
 
+    <script src="lightbox-plus-jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     <script src="script.js"></script>
 </head>
 
 <body class="has-navbar-fixed-top">
-    <script defer src="modal.js"></script>
 
     <nav id="navbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -38,7 +39,7 @@
 
             <div class="navbar-end">
                 <div class="buttons">
-                    <a class="button is-warning is-outlined is-normal mx-2 my-2">Topo</a>
+                    <a class="button is-warning is-outlined is-normal mx-2 my-2" id="topo-desktop">Topo</a>
                 </div>
             </div>
         </div>
@@ -49,36 +50,52 @@
         <div class="flexbox">
 
             <div class="img-frame my-5">
-                <img src="./img/img1.jpg" />
+                <a href="./img/img1.jpg" data-lightbox="models" data-title="self-portrait">
+                    <img src="./img/img1.jpg" />
+                </a>
             </div>
 
             <div class="img-frame my-5">
-                <img src="./img/img2.jpg" />
+                <a href="./img/img2.jpg" data-lightbox="models" data-title="self-portrait">
+                    <img src="./img/img2.jpg" />
+                </a>
             </div>
 
             <div class="img-frame my-5">
-                <img src="./img/img3.jpg" />
+                <a href="./img/img3.jpg" data-lightbox="models" data-title="self-portrait">
+                    <img src="./img/img3.jpg" />
+                </a>
             </div>
 
             <div class="img-frame my-5">
-                <img src="./img/img4.jpg" />
+                <a href="./img/img4.jpg" data-lightbox="models" data-title="self-portrait">
+                    <img src="./img/img4.jpg" />
+                </a>
             </div>
 
             <div class="img-frame my-5">
-                <img src="./img/img5.jpg" />
+                <a href="./img/img5.jpg" data-lightbox="models" data-title="self-portrait">
+                    <img src="./img/img5.jpg" />
+                </a>
             </div>
 
             <div class="img-frame my-5">
-                <img src="./img/img6.jpg" />
+                <a href="./img/img6.jpg" data-lightbox="models" data-title="self-portrait">
+                    <img src="./img/img6.jpg" />
+                </a>
             </div>
 
             <div class="img-frame my-5">
-                <img src="./img/img7.jpg" />
+                <a href="./img/img7.jpg" data-lightbox="models" data-title="self-portrait">
+                    <img src="./img/img7.jpg" />
+                </a>
             </div>
 
         </div>
 
     </div>
+
+    <a class="button is-warning is-outlined is-normal mx-2 my-2" id="topo-mobile">Topo</a>
 </body>
 
 </html>
