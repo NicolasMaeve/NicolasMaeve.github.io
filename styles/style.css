@@ -1,0 +1,146 @@
+/* 
+    META ELEMENTS AND BACKGROUND
+*/
+
+@font-face {
+	font-family: 'vintage';
+	src: url('/fonts/vintage.ttf') format('truetype');
+}
+
+* {
+	font-family: 'vintage';
+}
+
+html {
+	background-color: #d5d5fe !important;
+}
+
+/* 
+        NAVBAR
+*/
+
+.navbar {
+	background-color: #3d3e6a !important;
+}
+
+.navbar-menu {
+	background-color: #3d3e6a !important;
+}
+
+h1.title {
+	color: #EEEEEE;
+	align-self: center;
+	-webkit-user-drag: none;
+	user-select: none;
+}
+
+span {
+	color: #EEEEEE;
+}
+
+div.buttons {
+	padding: 0 !important;
+	top: 0 !important;
+	margin: 0 !important;
+}
+
+a.button:hover {
+	-webkit-user-drag: none;
+	user-select: none;
+}
+
+/* PHOTO FRAME */
+
+
+div.img-frame {
+	border: .5rem solid #EEEEEE !important;
+	border-radius: 2px !important;
+	background-color: #EEEEEE;
+	display: grid;
+	place-items: center;
+}
+
+div.img-frame img {
+	cursor: pointer;
+	overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+	div.img-frame {
+		max-width: 30%;
+	}
+}
+
+@media (max-width: 1024px) {
+	div.img-frame {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+
+div.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/* IMAGES MODAL */
+
+span.lb-caption {
+	font-family: 'JetBrains Mono'
+}
+
+div.img-frame a,
+div.img-frame a img {
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+/* Footer */
+
+div.footer {
+	background-color: #3d3e6a;
+	color: #EEEEEE;
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: fit-content !important;
+}
+
+div.links {
+	display: flex;
+	flex-direction: row;
+	background-color: #3d3e6a !important;
+	width: 25%;
+	height: fit-content;
+}
+
+@media (max-width: 1024px) {
+	div.links {
+		display: grid;
+		place-items: center;
+	}
+
+	div.links a {
+		width: max-content;
+		margin-bottom: 10%;
+	}
+}
+
+div.links a {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+
+#instagram-link {
+	background: #f09433;
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	color: #EEEEEE;
+}
+
+#instagram-link:hover {
+	background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+	transition: 1000ms linear;
+}
