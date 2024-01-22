@@ -1,0 +1,169 @@
+<!-- Code made by EduardoStarZ, check https://github.com/eduardostarz/ -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/lightbox.min.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- <link rel="icon" type="image/jpg" href="img/icon.png" width="100%" /> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="/scripts/lightbox-plus-jquery.min.js"></script>
+    <script src="/scripts/script.js"></script>
+</head>
+
+<body class="has-navbar-fixed-top">
+
+    <nav id="navbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="title is-3 my-2 mx-5">Neeks Maeve</h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+
+            <div class="navbar-end">
+                <div class="buttons">
+                    <a class="button is-warning is-outlined is-normal mx-2 my-2 " hx-get="/index.html" hx-target="" hx-swap="" >About me</a>
+                    <a class="button is-warning is-outlined is-normal mx-2 my-2" id="topo" onclick="scrolltop()">Go to
+                        Top</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <div class="flexbox">
+
+            <div class="img-frame my-5">
+                <a href="./img/img1.jpg" data-lightbox="models" data-title="self portrait">
+                    <img src="./img/img1.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img2.jpg" data-lightbox="models" data-title="New year Ironmouse concept fanart">
+                    <img src="./img/img2.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img3.jpg" data-lightbox="models" data-title="Ice Hashira OC">
+                    <img src="./img/img3.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img4.jpg" data-lightbox="models" data-title="The blue bird">
+                    <img src="./img/img4.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img5.jpg" data-lightbox="models" data-title="Romero Richas">
+                    <img src="./img/img5.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img6.jpg" data-lightbox="models" data-title="A new detective">
+                    <img src="./img/img6.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img7.png" data-lightbox="models" data-title="Bailong's sword">
+                    <img src="./img/img7.png" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img8.jpg" data-lightbox="models" data-title="Bailong's sword">
+                    <img src="./img/img8.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img9.jpng" data-lightbox="models" data-title="Khumi's Flag">
+                    <img src="./img/img9.png" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img10.jpg" data-lightbox="models" data-title="Fantasy Map">
+                    <img src="./img/img10.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img11.jpg" data-lightbox="models" data-title="FIMC fanart">
+                    <img src="./img/img11.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img12.jpg" data-lightbox="models" data-title="Khumi's prison scar">
+                    <img src="./img/img12.jpg" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img13.png" data-lightbox="models" data-title="Medallion">
+                    <img src="./img/img13.png" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img14.png" data-lightbox="models" data-title="The night prince">
+                    <img src="./img/img14.png" />
+                </a>
+            </div>
+
+            <div class="img-frame my-5">
+                <a href="./img/img15.jpg" data-lightbox="models" data-title="Day & night">
+                    <img src="./img/img15.jpg" />
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>This site was made by <a href="https://github.com/eduardostarz" class="" target="_blank">EduardoStarZ</a>
+            </p>
+            <p><a href="https://github.com/eduardostarz"></a></p>
+
+            <div class="links my-5">
+                <a href="http://twitter.com/neeks_maeve" id="twitter-link" target="_blank"
+                    class="footer-link button is-large is-info mx-3"><i class="fa fa-twitter"></i></a>
+                <a href="http://instagram.com/neeks.ilustra" id="instagram-link" target="_blank"
+                    class="footer-link button is-large is-warning mx-3"><i class="fa fa-instagram"></i></a>
+
+                <a href="mailto:artnico096@gmail.com" id="email-link" target="_blank"
+                    class="footer-link button is-large is-success mx-3"><i class=" fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
