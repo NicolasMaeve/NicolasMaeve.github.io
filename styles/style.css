@@ -12,7 +12,7 @@
 }
 
 html {
-	background-color: #d5d5fe !important;
+	background-color: #cacaf9 !important;
 }
 
 /* 
@@ -47,6 +47,26 @@ div.buttons {
 a.button:hover {
 	-webkit-user-drag: none;
 	user-select: none;
+}
+
+/* BODY */
+
+body h1.subtitle.is-1 {
+    text-align: center;
+}
+
+body p.subtitle.is-3 {
+    color: #DDDDDD;
+    text-align: start; 
+}
+
+div.text-box {
+    margin: auto;
+    width: 95%;
+    border: .1rem solid #3d3e6a;
+    border-radius: 16px 16px;
+    height: fit-content;
+    background-color: #3d3e6a;
 }
 
 /* PHOTO FRAME */
@@ -97,7 +117,7 @@ div.img-frame a img {
 	-webkit-user-drag: none;
 }
 
-/* Footer */
+/* FOOTER */
 
 div.footer {
 	background-color: #3d3e6a;

@@ -1,8 +1,10 @@
+<!-- Code made by EduardoStarZ, check https://github.com/eduardostarz/ -->
+
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" id="html">
 
 <head>
-    <title>Portfolio</title>
+    <title>Neeks Maeve &nbsp;-> About me</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -10,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles/lightbox.min.css" />
     <link rel="stylesheet" href="/styles/style.css" />
-    <!-- <link rel="icon" type="image/jpg" href="img/icon.png" width="100%" /> -->
+    <link rel="icon" type="image/jpg" href="img/icon.png" width="100%" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
@@ -38,14 +40,46 @@
 
             <div class="navbar-end">
                 <div class="buttons">
-                    <a class="button is-warning is-outlined is-normal mx-2 my-2 ">About me</a>
-                    <a class="button is-warning is-outlined is-normal mx-2 my-2" id="topo" onclick="scrolltop()">Go to
-                        Top</a>
+                    <a class="button is-warning is-outlined is-normal mx-2 my-2" href="javascript:void(0)"
+                        onclick="window.location.replace('./portfolio')">Portfolio</a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <h1 class="subtitle is-1 my-6 mx-6">About me</h1>
+    <div class="text-box my-5">
+
+        <p class="subtitle is-3 my-5 mx-6">Hello, I'm Nicolas Maeve, a 19 years old brazilian artist looking for new experiences.
+        </p>
+        <p class="subtitle is-3 my-5 mx-6">I currently speak 3 different languages: English, Portuguese and Spanish, but recently
+            I started learning French too.</p>
+        <p class="subtitle is-3 my-5 mx-6">My availability will almost always be Monday to Thursday 1pm to 7pm, but feel free to
+            call me and discuss a different time.</p>
+
+        <p class="subtitle is-3 my-5 mx-6">If you are interested, please contact me via email through <a href="mailto:artnico096@gmail.com" target="_blank">artnico096@gmail.com</a> or through my
+            social medias</p>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>This site was made by <a href="https://github.com/eduardostarz" target="_blank">EduardoStarZ</a>
+            </p>
+            <p><a href="https://github.com/eduardostarz"></a></p>
+
+            <div class="links my-5">
+                <a href="http://twitter.com/neeks_maeve" id="twitter-link" target="_blank"
+                    class="footer-link button is-large is-info mx-3"><i class="fa fa-twitter"></i></a>
+                <a href="http://instagram.com/neeks.ilustra" id="instagram-link" target="_blank"
+                    class="footer-link button is-large is-warning mx-3"><i class="fa fa-instagram"></i></a>
+
+                <a href="mailto:artnico096@gmail.com" id="email-link" target="_blank"
+                    class="footer-link button is-large is-success mx-3"><i class=" fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
